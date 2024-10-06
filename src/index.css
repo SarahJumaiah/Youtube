@@ -1,0 +1,42 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+.search-field{
+  border: 1px solid rgb(174, 174, 174);
+}
+
+.input {
+  transition: border 0.2s ease-in-out;
+  min-width: 280px;
+  padding: 1px 12px;
+  line-height: 1.5;
+}
+
+.label {
+ 
+  top: -1rem;
+  left: 0.75rem;
+  background: white;
+  font-size: 0.75rem;
+  padding: 0 5px;
+  color: #1a73e8;
+}
+
+.input:focus + .label,
+.input:active + .label,
+.input.filled + .label {
+  font-size: 0.75rem;
+  top: -0.9rem;
+  padding: 0 5px;
+  color: #1a73e8;
+}
+
+
+
